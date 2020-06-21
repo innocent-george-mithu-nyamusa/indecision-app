@@ -1,0 +1,40 @@
+.button {
+  background-color: $color-purple;
+  border: none;
+  color: $color-white;
+  font-size: $md-size;
+  font-weight: bold;
+  cursor: pointer;
+
+  &__big-button {
+    margin-bottom: $sm-size;
+    width: 100%;
+    padding: $padding-md;
+    border-bottom: 0.6rem solid darken($color-purple, 10%);
+
+    //Big button disabled make it semi-transparent.
+    &:disabled {
+      opacity: 0.3;
+    }
+  }
+  @media (min-width: $desktop-breakpoint) {
+    .big-button {
+      margin-bottom: $xl-size;
+    }
+  }
+  &:disabled {
+    cursor: default;
+  }
+  //button for adding options
+  &__add-option {
+    padding: $padding-sm;
+    border-bottom: 0.3rem solid darken($color-purple, 10%);
+  }
+
+  &--link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: lighter;
+  }
+}

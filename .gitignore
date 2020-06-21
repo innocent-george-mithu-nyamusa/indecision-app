@@ -1,0 +1,6 @@
+node_modules/
+playgorund/
+TODO.txt
+*.env
+.vscode/
+.dist/
